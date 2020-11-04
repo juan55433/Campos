@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">JavaCampos</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="logo">LOGO</string>
+    <string name="antecedentes">Antecedentes</string>
+    <string name="fecha_nacimiento">Fecha_Nacimiento</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="registro">Registro</string>
+    <string name="correo">Correo</string>
+    <string name="n_mero_telef_nico">Número telefónico</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="pedir_cita">Pedir Cita</string>
+    <string name="campos">Campos</string>
+    <string name="ver_zona_de_riesgo">Ver zona de riesgo</string>
+    <string name="evaluar_riesgo">Evaluar Riesgo</string>
+    <string name="todo">TODO</string>
+    <string name="usuario">Usuario</string>
+    <string name="password">Password</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="contrase_a">Contraseña</string>
+</resources>

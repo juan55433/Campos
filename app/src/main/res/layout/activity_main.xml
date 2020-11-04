@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333232"
+    android:backgroundTint="#333232"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="190dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Texto_Bienvenido"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/bienvenido"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="264dp"
+        android:layout_height="345dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toTopOf="@+id/B_registro"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:srcCompat="@drawable/pngegg" />
+
+    <Button
+        android:id="@+id/B_registro"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="126dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="44dp"
+        android:layout_weight="1"
+        android:backgroundTint="#333232"
+        android:onClick="abrirRegistro"
+        android:text="@string/registrarse"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BTLogin"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="24dp"
+        android:layout_height="800dp"
+        android:background="#32303A"
+        android:backgroundTint="#F8F8F8"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="24dp"
+        android:layout_height="808dp"
+        android:background="#32303A"
+        android:backgroundTint="#F8F8F8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BTLogin"
+        android:layout_width="124dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="77dp"
+        android:backgroundTint="#333232"
+        android:onClick="abrir_inicioSesion"
+        android:text="@string/iniciar_sesi_n"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/B_registro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

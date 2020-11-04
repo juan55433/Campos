@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="LabelFor"
+    tools:context=".Registro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#333232"
+        android:backgroundTint="#333232"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/TC_Contrasena"
+            android:layout_width="200dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="2dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            app:layout_constraintBottom_toTopOf="@+id/B_Registro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t_Telefono" />
+
+        <TextView
+            android:id="@+id/t_Antecedentes"
+            android:layout_width="224dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/antecedentes"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/TC_Antecedentes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TC_Fecha" />
+
+        <TextView
+            android:id="@+id/T_Fecha"
+            android:layout_width="293dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="11dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/fecha_nacimiento"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/TC_Fecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TC_Correo" />
+
+        <TextView
+            android:id="@+id/T_CorreoE"
+            android:layout_width="288dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="80dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/correo_electr_nico"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/TC_Correo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TC_Nombre" />
+
+        <TextView
+            android:id="@+id/t_Nombre"
+            android:layout_width="131dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="236dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/nombre"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/TC_Nombre"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/T_Registro"
+            android:layout_width="150dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="39dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/registro"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/t_Nombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/TC_Nombre"
+            android:layout_width="187dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t_Nombre" />
+
+        <EditText
+            android:id="@+id/TC_Correo"
+            android:layout_width="221dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="41dp"
+            android:layout_marginEnd="160dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/T_CorreoE" />
+
+        <EditText
+            android:id="@+id/TC_Antecedentes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="156dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t_Antecedentes" />
+
+        <TextView
+            android:id="@+id/t_Telefono"
+            android:layout_width="283dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="80dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/n_mero_telef_nico"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TC_Antecedentes" />
+
+        <EditText
+            android:id="@+id/TC_Numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="157dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t_Telefono" />
+
+        <EditText
+            android:id="@+id/TC_Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="160dp"
+            android:autofillHints=""
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/T_Fecha" />
+
+        <Button
+            android:id="@+id/B_Registro"
+            android:layout_width="125dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginEnd="134dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/registrarse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/T_Contrasena"
+            android:layout_width="219dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="181dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/amaranth_bold_italic"
+            android:text="@string/contrase_a"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#E4E4E4"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TC_Numero" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="24dp"
+        android:layout_height="800dp"
+        android:background="#32303A"
+        android:backgroundTint="#F8F8F8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="24dp"
+        android:layout_height="808dp"
+        android:background="#32303A"
+        android:backgroundTint="#F8F8F8"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

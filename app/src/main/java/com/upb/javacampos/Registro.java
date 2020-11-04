@@ -17,10 +17,12 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Registro extends AppCompatActivity {
+
     EditText TC_Nombre,TC_Correo, TC_Fecha, TC_Antecedentes,TC_Numero, TC_Contrasena;
     Button B_Registro;
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,6 @@ public class Registro extends AppCompatActivity {
         TC_Numero = (EditText)findViewById(R.id.TC_Numero);
         TC_Contrasena = (EditText)findViewById(R.id.TC_Contrasena);
         B_Registro = (Button)findViewById(R.id.B_Registro);
-
         B_Registro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
